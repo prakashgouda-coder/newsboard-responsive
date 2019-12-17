@@ -1,0 +1,16 @@
+div {
+  width: 20em;
+  height: 15em;
+  align-content: center;
+}
+
+.lblcss {
+  font-size: 1em;
+  ;
+  font: bold;
+}
+
+.lblcss::after {
+  content: '*';
+  color: red;
+}

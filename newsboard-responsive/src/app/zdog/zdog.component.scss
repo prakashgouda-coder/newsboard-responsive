@@ -1,0 +1,16 @@
+//vars
+$bgcolor: #081d3f;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#circle {
+  background-color: $bgcolor;
+  /*background: radial-gradient(#956f5a 0%, #6e4228 100%);*/
+  cursor: move;
+  width: 10vw;
+  height: 10vh;
+}

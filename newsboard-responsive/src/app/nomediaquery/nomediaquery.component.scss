@@ -1,0 +1,43 @@
+// .linear {
+//   background: linear-gradient(100deg, rgb(76, 0, 255), transparent),
+//     repeating-linear-gradient(10deg, rgb(183, 0, 255) 0%, rgb(183, 0, 255) 5%, transparent 5%, transparent 10%);
+// }
+
+.linear {
+  background: linear-gradient(99deg, rgba(157, 13, 251, 0.2),
+      rgba(106, 108, 100, 0.2)),
+    linear-gradient(45deg, rgb(81, 61, 163) 0%,
+      rgb(55, 51, 140) 4%, rgb(184, 103, 254) 56%, rgb(4, 30, 94) 63%,
+      rgb(133, 82, 208) 64%, rgb(107, 72, 185) 91%, rgb(158, 93, 231) 93%,
+      rgb(30, 40, 117) 100%)
+}
+
+h1 {
+  margin: 5rem;
+}
+
+main {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  //grid-gap: 1rem;
+  cursor: pointer;
+
+  .card {
+    transition: transform 1s;
+
+    &:hover {
+      transform: translateY(-10px);
+      background-color: rgb(220, 235, 240);
+    }
+
+    img {
+      width: 100%;
+
+    }
+
+    .info {
+      padding: 1rem;
+    }
+  }
+}
